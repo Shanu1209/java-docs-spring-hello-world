@@ -37,7 +37,7 @@ pipeline {
             }
             post {
                 failure {
-                    emailext body: ""pls check the console output at $BUILD_URL for more info", to: "shanmukhigangada@gmail.com", subject: '$PROJECT_NAME is failed - Build number is $BUILD_NUMBER and build status is $BUILD_STATUS'
+                    emailext body: "pls check the console output at $BUILD_URL for more info", to: "shanmukhigangada@gmail.com", subject: '$PROJECT_NAME is failed - Build number is $BUILD_NUMBER and build status is $BUILD_STATUS'
         stage('print') {
             agent {
                 label 'linux'
